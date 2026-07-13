@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <!-- KUNCI agar tampil benar di HP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Situs ini tidak dapat dijangkau</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, Roboto, Arial, sans-serif;
+        }
+
+        html, body {
+            background-color: #202124; /* persis latar gelap Chrome HP */
+            color: #e8eaed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 48px 24px;
+            justify-content: flex-start;
+        }
+
+        /* Ikon persis gaya di gambar */
+        .error-icon {
+            width: 44px;
+            height: 44px;
+            margin-bottom: 24px;
+            opacity: 0.75;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 500;
+            color: #dadce0;
+            margin-bottom: 14px;
+            line-height: 1.3;
+        }
+
+        .desc {
+            font-size: 16px;
+            line-height: 1.45;
+            color: #bdc1c6;
+            margin-bottom: 10px;
+        }
+
+        .error-code {
+            font-size: 14px;
+            color: #9aa0a6;
+            margin-bottom: auto;
+        }
+
+        .reload-btn {
+            width: 100%;
+            padding: 12px 0;
+            margin-top: 60px;
+            background-color: #8ab4f8;
+            border: none;
+            border-radius: 24px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #17171a;
+            cursor: pointer;
+        }
+        .reload-btn:active { background-color: #719ce0; }
+    </style>
+</head>
+<body>
+<!-- Ikon persis kotak wajah sedih seperti aslinya -->
+<svg class="error-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+    <path d="M5 3h10l4 4v14H5V3z"/>
+    <line x1="9" y1="10" x2="11" y2="10"/>
+    <line x1="13" y1="10" x2="15" y2="10"/>
+    <path d="M9 15c1-1.2 2.2-1.8 3.5-1.8s2.5.6 3.5 1.8"/>
+</svg>
+
+<h1>Situs ini tidak dapat dijangkau</h1>
+<p class="desc">Periksa apakah ada kesalahan ketik di tiktokshop-beige.vercel.app
+</p>
+<p class="error-code">DNS_PROBE_FINISHED_NXDOMAIN</p>
+
+<button class="reload-btn" onclick="location.reload()">Muat ulang</button>
+</body>
+</html>
